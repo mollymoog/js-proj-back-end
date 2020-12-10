@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service: MyString
+  link: MyString
+  username: MyString
+  password: MyString
+  expiration: 2020-12-09 18:20:08
+  active: false
+  family: one
+
+two:
+  service: MyString
+  link: MyString
+  username: MyString
+  password: MyString
+  expiration: 2020-12-09 18:20:08
+  active: false
+  family: two
