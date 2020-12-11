@@ -3,7 +3,12 @@ class FreeTrialsController < ApplicationController
 
   # GET /free_trials
   def index
-    @free_trials = FreeTrial.all
+    if params[:family_id]
+      @family = Family.find(params[:family_id])
+      @free_trials = @family.free_trials
+    else
+      @free_trials = FreeTrial.all
+    end
 
     render json: @free_trials
   end
