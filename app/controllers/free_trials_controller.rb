@@ -51,6 +51,6 @@ class FreeTrialsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def free_trial_params
-      params.require(:free_trial).permit(:service, :link, :username, :password, :expiration, :active, :family_id)
+      params.permit(:service, :link, :username, :password, :expiration, :active, :family_id)
     end
 end
