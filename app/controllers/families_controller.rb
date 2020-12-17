@@ -5,7 +5,7 @@ class FamiliesController < ApplicationController
   def index
     @families = Family.all
 
-    render json: @families
+    render json: @families.to_json(:include => :free_trials)
   end
 
   # GET /families/1
